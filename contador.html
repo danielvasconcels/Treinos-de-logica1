@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    function pulaLinha(){
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase)
+        pulaLinha()
+    }
+    var limite = parseInt(prompt("Entre com o numero até qual vc deseja contar!"));
+    var começo = 0 
+    while(começo <= limite) {
+        mostra("Os numeros pares são " + começo);
+        começo = começo + 2;
+    }
+    mostra("Acima estão todos os números pares até o número " + limite)
+</script>
+</html>
